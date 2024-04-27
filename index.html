@@ -42,13 +42,13 @@
  
     <main>
 
-       <!-- <section class="hero-page">
+        <!--<section class="hero-page">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions
                 for Your Business</h1>
             <button type="button" class="button-order">Order Service</button>
         </div>
-        </section>-->
+        </section>
 
         <section class="advantages-list">
             <div class="container">
@@ -102,13 +102,25 @@
 
             </ul>
             </div>
-        </section>
+        </section>-->
 
-       <!-- <section class="our-team">
+        <section class="our-team">
             <div class="container">
                 <h2 class="title-team">Our Team</h2>
             <ul class="our-team-page">
-                <li class="img-our-team"><img src="./images/img-mark.jpg" alt="man-with-beard" width="264" height="260" />
+                <li class="img-our-team">
+                    <picture>
+                        <source srcset="./images/img-mark.jpg 1x,
+                         ./images/img-mark-dt2x.jpg 2x"
+                         media="(min-width: 768px)" />
+                        <source srcset="./images/img-mark-tb1.jpg 1x,
+                        ./images/img-mark-tb2x.jpg 2x"
+                        media="(min-width: 768px)"/>
+                        <source srcset="./images/imgMark-mob.jpg 1x,
+                        ./images/imgMark-mob2x.jpg 2x"
+                        media="(max-width: 767px)"/>
+                    <img src="./images/img-mark.jpg" alt="man-with-beard" width="264" height="260" />
+                    </picture>
                     <div class="staff-team">
                         <h3 class="name">Mark Guerrero</h3>
                         <p class="profession">Product Designer</p>
@@ -321,7 +333,7 @@
             
         </section>
 
-        <section class="our-portfolio">
+        <!--<section class="our-portfolio">
             <div class="container">
                 <h2 class="portfolio-list">Our Portfolio</h2>
             <ul class="our-portfolio-page">

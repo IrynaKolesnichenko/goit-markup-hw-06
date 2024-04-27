@@ -432,7 +432,13 @@ text-align: center;
 .our-team {
     background-color: #f4f4fd;
     align-items: center;
-    padding: 120px 0;
+    padding: 96px 0;
+}
+
+@media only screen and (min-width: 1158px) {
+.our-team {
+padding: 120px 0;
+}
 }
 
 .title-team {
@@ -443,12 +449,28 @@ text-align: center;
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
-    margin-bottom: 72px;
+    margin: 72px 0;
 }
 
 .our-team-page {
-    display: flex;
     gap: 24px;
+    flex-direction: row;
+}
+
+@media only screen and (min-width: 768px) {
+.our-team-page {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 64px 24px;
+margin-bottom: 96px;
+}
+}
+
+@media only screen and (min-width: 1158px) {
+.our-team-page {
+    margin-bottom: 120px;
+    }
 }
 
 .img-our-team {
@@ -458,11 +480,29 @@ text-align: center;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #ffffff;
-    width: calc((100% - 72px)/4);
+    width: 264px;
+    margin-bottom: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+.img-our-team {
+    width: calc((100% - 216px)/2);
+    margin-bottom: 0px;
+}
+}
+
+@media only screen and (min-width: 1158px) {
+.img-our-team {
+   width: calc((100% - 72px)/4);
+    }
+ 
 }
 
  .staff-team {
     padding: 32px 0;
+        display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
  }
 
 .name {
@@ -485,7 +525,7 @@ text-align: center;
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
-    margin: 0px 0;
+    margin-bottom: 8px;
     gap: 28px;
 }
 
