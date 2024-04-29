@@ -572,26 +572,27 @@ margin-bottom: 96px;
     /* PORTFOLIO */
 
 .our-portfolio {
-    max-width: 288px;
+    width: 288px;
     gap: 48px;
     padding-top: 96px;
     padding-bottom: 96px;
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 768px) {
 .our-portfolio {
+    width: 768px;
     gap: 72px 24px;
 }
 }
 
 @media only screen and (min-width: 1158px) {
 .our-portfolio {
+    width: 1158;
     gap: 24px;
     padding-top: 120px;
     padding-bottom: 120px;
 }
 }
-
 
 .portfolio-list {
     font-weight: 700;
@@ -604,36 +605,54 @@ margin-bottom: 96px;
     margin-bottom: 72px;
 }
 
+@media only screen and (min-width: 1158px) {
+.portfolio-list {
+    width: 1128px;
+}
+}
+
 .our-portfolio-page {
-    /*width: 1128px;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;*/
-    max-width: 288px;
+    width: 288px;
     gap: 48px;
     justify-content: center;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media only screen and (min-width: 768px) {
+.our-portfolio-page{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    column-gap: 24px;
+    row-gap: 72px;
+}
+}
+
+
 @media only screen and (min-width: 1158px) {
 .our-portfolio-page {
     width: 1128px;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
     row-gap: 48px;
 }
 }
 
+@media only screen and (min-width: 768px) {
 .portfolio-list-items {
-    width: calc((100% - 48px) / 3);
+    width: calc((100% - 24px) / 2);
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    width: 360px;
+    width: 356px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+.portfolio-list-items {
+    width: calc((100% - 48px) / 3);
+    width: 360px;
+}
 }
 
 .portfolio-list-items:hover,  
@@ -644,11 +663,22 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 }
 
 .portfolio-img {
-   /* width: 360px;*/
-   max-width: 288px;
+    width: 288px;
     position: relative;
     overflow: hidden;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (min-width: 768px) {
+.portfolio-img {
+   width: 356px;
+}
+}
+
+@media only screen and (min-width: 1158px) {
+.portfolio-img {
+   width: 360px;
+}
 }
 
 .annex-items {
@@ -707,11 +737,26 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 
 .footer-item {
     background-color: #2e2f42;
-    padding: 100px 0;
-    
+    padding-top: 96px;
+    padding-bottom: 72px;  
 }
 
 .container-footer-list {
+    justify-content: center;
+} 
+
+@media only screen and (min-width: 768px) {
+.container-footer {
+    display: inline-block;
+}
+}
+
+@media only screen and (min-width: 1158px) {
+.footer-item {
+    padding: 100px 0;
+    }
+
+ .container-footer-list {
     display: flex;
     align-items: baseline;
     margin-right: 120px;
@@ -719,8 +764,10 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 }
 
 .container-footer {
-   margin-right: 120px;
+    margin-right: 120px;
 }
+}
+
 
 .footer-part {
     width: 264px;
@@ -733,7 +780,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 }
 
 .logo-footer {
-    display: block;
+    display: flex;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -742,6 +789,16 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     text-transform: uppercase;
     color: #4d5ae5;
     margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+.logo-footer{
+    flex-wrap: wrap;
+    justify-content: left;
+}
 }
 
 .logo-part-footer {
@@ -750,12 +807,29 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 }
 
 .social-list-item {
+    margin: 72px 40px 72px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+.social-list-item {
+    display: inline-block;
+    margin-top: 96px;
+    margin-bottom: 104px;
+}
+}
+
+@media only screen and (min-width: 1158px){
+.social-list-item {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
     text-align: left;
     width: 208px;
     margin-right: 120px;
+}
 }
 
 .social-media-title {
@@ -765,6 +839,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     letter-spacing: 0.02em;
     color: #ffffff;
     margin-bottom: 16px;
+    justify-content: center;
 }
 
 .social-list-footer {
@@ -803,8 +878,20 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 
 
 .footer-form-subscribe {
+    min-width: 288px;
+    text-align: center;
+
+}
+
+@media only screen and (min-width: 768px) {
+.footer-form-subscribe {
+    min-width: 453px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
+    gap: 16px;
+}
 }
 
 
@@ -817,12 +904,24 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     margin-bottom: 16px;
 }
 
+@media only screen and (min-width: 768px) {
+.footer-form-email {
+    margin-left: 108px;
+}
+}
+
+.footer-subscribe {
+    text-align: center;
+}
+
+@media only screen and (min-width: 1158px) {
 .footer-subscribe {
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: left;
     gap: 24px;
+}
 }
 
 .footer-input-item {
@@ -837,6 +936,13 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #ffffff;
+    margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+.footer-input-item {
+    margin-right: 24px;
+}
 }
 
 .footer-input-item::placeholder {
@@ -847,9 +953,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 .subscribe-btn {
     min-width: 165px;
     height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -861,8 +964,16 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     border-radius: 4px;
     background-color: #4d5ae5;
     position: relative;
-    padding-left: 24px;
     padding-right: 16px;
+}
+
+@media only screen and (min-width: 1158px) {
+.subscribe-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 24px;
+}
 }
 
 .close-modal-icon-subscribe {
