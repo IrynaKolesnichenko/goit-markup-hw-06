@@ -763,9 +763,12 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 .footer-item {
     padding: 100px 0;
     justify-content: center;
-    }
+}
 
  .container-footer-list {
+    width: 1136px;
+    margin: 0;
+    flex-wrap: nowrap;
     display: flex;
     align-items: baseline;
     margin-right: 120px;
@@ -781,13 +784,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
  }
 }
 
-@media only screen and (min-width: 1158px) {
-.container-footer-list{
-    width: auto;
-    margin: 0;
-    flex-wrap: nowrap;
-}
-}
 
 .footer-part {
     width: 264px;
