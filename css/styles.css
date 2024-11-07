@@ -803,12 +803,9 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 @media only screen and (min-width: 1158px) {
  .container-footer-list {
     width: 1158px;
-    margin: 0;
     flex-wrap: nowrap;
     display: flex;
-    align-items: center;
-    margin-right: 153px;
-    margin-left: 156px;
+    align-items: baseline;
 }
 }
 
